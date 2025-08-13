@@ -1,0 +1,22 @@
+name: StarSign
+version: 1.0-SNAPSHOT
+main: dev.ha1zen.StarSign
+api-version: 1.21
+folia-supported: true
+commands:
+  sign:
+    description: Подписать предмет
+    usage: /<command> [подпись]
+  unsign:
+    description: Удалить подпись с предмета
+    usage: /<command>
+permissions:
+  starsign.sign:
+    description: Доступ к подписи предметов
+    default: true
+  starsign.unsign:
+    description: Доступ к снятию подписи, которую наложил сам
+    default: true
+  starsign.adminunsign:
+    description: Доступ к снятию любых подписей
+    default: op
